@@ -1,4 +1,12 @@
-.nav-brand {
+.navbar_container {
+  margin: auto;
+  width: 90%;
+}
+.nav_brand {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
-  padding: 30px;
+  color: #302B27;
+  font-size: 24px;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }

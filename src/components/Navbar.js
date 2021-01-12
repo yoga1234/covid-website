@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Navbar.module.css'
 
 const Navbar = () => (
-  <nav>
-    <p className="nav-brand">YOGASMARA</p>
+  <nav className={styles.navbar_container}>
+    <p className={styles.nav_brand}>YOGASMARA</p>
   </nav>
 )
 
