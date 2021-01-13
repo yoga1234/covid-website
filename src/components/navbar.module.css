@@ -3,9 +3,9 @@
   width: 90%;
 }
 .nav_brand {
+  color: #302B27;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
-  color: #302B27;
   font-size: 20px;
   padding-bottom: 15px;
   padding-top: 5px;
