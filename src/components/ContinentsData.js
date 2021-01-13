@@ -12,9 +12,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className="continent-data-confirmed">9999 People Confirmed</p>
-          <p className="continent-data-recovered">9999 People Recovered</p>
-          <p className="continent-data-deceased">9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}><b>1.000.000</b> People <b>Confirmed</b></p>
+          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
+          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
         </div>
       </div>
 
@@ -25,9 +25,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className="continent-data-confirmed">9999 People Confirmed</p>
-          <p className="continent-data-recovered">9999 People Recovered</p>
-          <p className="continent-data-deceased">9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}>9999 People Confirmed</p>
+          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
+          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
         </div>
       </div>
 
@@ -38,9 +38,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className="continent-data-confirmed">9999 People Confirmed</p>
-          <p className="continent-data-recovered">9999 People Recovered</p>
-          <p className="continent-data-deceased">9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}>9999 People Confirmed</p>
+          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
+          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
         </div>
       </div>
     </div>

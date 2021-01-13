@@ -30,7 +30,7 @@
   text-align: center;
 }
 .total_country_header {
-  color: #fff;
+  color: #F5F3F5;
   font-family: 'Open Sans', sans-serif;
   font-size: 16;
   font-weight: 300;
@@ -38,9 +38,17 @@
   margin-bottom: 0;
 }
 .total_country_subheader {
-  color: #fff;
+  color: #F5F3F5;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 50px;
+}
+.continent_data_confirmed, 
+.continent_data_recovered,
+.continent_data_deceased {
+  color: #F5F3F5;
+  text-align: center;
+  font-weight: 300;
 }
