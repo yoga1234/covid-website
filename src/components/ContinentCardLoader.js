@@ -17,8 +17,8 @@ import Color from './Color.module.css'
 const dataCounter = (data) => {
   data = data.CovidData.data
   let dataObject = {}
-  // counting total country in continent
   for (let i in data) {
+    // counting total country in continent
     if (data[i].All.continent !== undefined) {
       if (!dataObject.hasOwnProperty(data[i].All.continent)) {
         dataObject[data[i].All.continent] = {}
@@ -28,9 +28,15 @@ const dataCounter = (data) => {
       }
     }
 
-    // if (dataObject.hasOwnProperty(data[i].All.continent)) {
-    //   dataObject[data[i].All.continent]['totalCountry'] 
-    // }
+    // counting for total recovered
+    if (data[i].All.confirmed !== undefined) {
+
+    }
+
+    // counting for total deaths
+
+    // counting for total recovered
+
   }
 
   return dataObject
