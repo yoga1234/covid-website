@@ -8,23 +8,25 @@
 .most_affected_card {
   border: 1px solid #000;
   width: 80%;
-  margin: auto;
+  margin: 0 auto 100px auto;
 }
 .affected_card_title {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  margin-top: 30px;
   text-align: center;
 }
 .most_affected_data {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 30px;
   text-align: center;
 }
 .data_number {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   border-bottom: 1px solid #000;
   margin: auto;
   padding-bottom: 15px;
