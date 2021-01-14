@@ -1,6 +1,37 @@
 .most_affected_title {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 26px;
   margin-top: 100px;
   text-align: center;
+}
+.most_affected_card {
+  border: 1px solid #000;
+  width: 80%;
+  margin: auto;
+}
+.affected_card_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.most_affected_data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+.data_number {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  margin: auto;
+  padding-bottom: 15px;
+  width: max-content;
+}
+.data_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
 }
