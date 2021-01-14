@@ -3,25 +3,43 @@ import React from 'react'
 import styles from './ContinentsData.module.css'
 import Color from './Color.module.css'
 
-const CardGenerator = (data) => {
-  data = data.CovidData.data
-  // console.log(data)
-  let dataObject = {
-
+/*
+  {
+    Asia: {
+      totalCountries: 10,
+      totalConfirmed: 10,
+      totalDeaths: 10,
+      totalRecovered: 10
+    }
   }
-  // let stringReturn = ''
+*/
 
+const dataCounter = (data) => {
+  data = data.CovidData.data
+  let dataObject = {}
   // counting total country in continent
   for (let i in data) {
-    if (dataObject.hasOwnProperty(data[i].All.continent)) {
-      dataObject[data[i].All.continent]++
-    } else {
-      dataObject[data[i].All.continent] = 1
+    if (data[i].All.continent !== undefined) {
+      if (!dataObject.hasOwnProperty(data[i].All.continent)) {
+        dataObject[data[i].All.continent] = {}
+        dataObject[data[i].All.continent]['totalCountry'] = 1
+      } else {
+        dataObject[data[i].All.continent]['totalCountry']++
+      }
     }
 
-    console.log(dataObject)
+    // if (dataObject.hasOwnProperty(data[i].All.continent)) {
+    //   dataObject[data[i].All.continent]['totalCountry'] 
+    // }
   }
 
+  return dataObject
+}
+
+const CardGenerator = (data) => {
+  let totalCountry = dataCounter(data)
+  
+  console.log(totalCountry)
 }
 
 const ContinentCardLoader = (props) => (
