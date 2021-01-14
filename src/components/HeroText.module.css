@@ -15,13 +15,14 @@
   color: #302B27;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  font-weight: 300;
   margin-top: 0;
   text-align: center;
 }
 .text_blue {
   color: #357DED;
+  font-weight: bold;
 }
 .text_red {
   color: #E34A6F;
+  font-weight: bold;
 }

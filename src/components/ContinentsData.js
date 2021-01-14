@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './ContinentsData.module.css'
+import Color from './Color.module.css'
 
 const ContinentData = () => (
   <div className={styles.continents_container}>
@@ -12,9 +13,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className={styles.continent_data_confirmed}><b>1.000.000</b> People <b>Confirmed</b></p>
-          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
-          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}><b>1.000.000</b> People <b className={Color.text_black}>Confirmed</b></p>
+          <p className={styles.continent_data_recovered}><b>9999</b> People <b className={Color.text_green}>Recovered</b></p>
+          <p className={styles.continent_data_deceased}><b>9999</b> People <b className={Color.text_white}>Deceased</b></p>
         </div>
       </div>
 
@@ -25,9 +26,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className={styles.continent_data_confirmed}>9999 People Confirmed</p>
-          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
-          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}><b>1.000.000</b> People <b className={Color.text_black}>Confirmed</b></p>
+          <p className={styles.continent_data_recovered}><b>9999</b> People <b className={Color.text_green}>Recovered</b></p>
+          <p className={styles.continent_data_deceased}><b>9999</b> People <b className={Color.text_white}>Deceased</b></p>
         </div>
       </div>
 
@@ -38,9 +39,9 @@ const ContinentData = () => (
           <p className={styles.total_country_subheader}>99</p>
         </div>
         <div className="continent-data">
-          <p className={styles.continent_data_confirmed}>9999 People Confirmed</p>
-          <p className={styles.continent_data_recovered}>9999 People Recovered</p>
-          <p className={styles.continent_data_deceased}>9999 People Deceased</p>
+          <p className={styles.continent_data_confirmed}><b>1.000.000</b> People <b className={Color.text_black}>Confirmed</b></p>
+          <p className={styles.continent_data_recovered}><b>9999</b> People <b className={Color.text_green}>Recovered</b></p>
+          <p className={styles.continent_data_deceased}><b>9999</b> People <b className={Color.text_white}>Deceased</b></p>
         </div>
       </div>
     </div>

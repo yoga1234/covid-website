@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import HeroText from './components/HeroText'
 import ContinentsData from './components/ContinentsData'
+import MostAffected from './components/MostAffected'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroText />
       <ContinentsData />
+      <MostAffected />
     </div>
   );
 }
