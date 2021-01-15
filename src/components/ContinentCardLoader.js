@@ -47,6 +47,13 @@ const dataCounter = (data) => {
     }
 
     // counting for total recovered
+    if (data[i].All.recovered !== undefined && data[i].All.continent !== undefined) {
+      if (!dataObject[data[i].All.continent].hasOwnProperty('totalRecovered')) {
+        dataObject[data[i].All.continent]['totalRecovered'] = data[i].All.recovered
+      } else {
+        dataObject[data[i].All.continent]['totalRecovered'] += data[i].All.recovered
+      }
+    }
 
   }
 
