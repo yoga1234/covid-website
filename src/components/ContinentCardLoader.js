@@ -20,7 +20,7 @@ const dataCounter = (data) => {
   for (let i in data) {
     // counting total country in continent
     if (data[i].All.continent !== undefined) {
-      if (!dataObject.hasOwnProperty(data[i].All.continent)) {
+      if (!dataObject.hasOwnProperty(`${data[i].All.continent}`)) {
         dataObject[data[i].All.continent] = {}
         dataObject[data[i].All.continent]['totalCountry'] = 1
       } else {
@@ -28,12 +28,23 @@ const dataCounter = (data) => {
       }
     }
 
-    // counting for total recovered
-    if (data[i].All.confirmed !== undefined) {
-
+    // counting for total confirmed
+    if (data[i].All.confirmed !== undefined && data[i].All.continent !== undefined) {
+      if (!dataObject[data[i].All.continent].hasOwnProperty('totalConfirmed')) {
+        dataObject[data[i].All.continent]['totalConfirmed'] = data[i].All.confirmed
+      } else {
+        dataObject[data[i].All.continent]['totalConfirmed'] += data[i].All.confirmed
+      }
     }
 
     // counting for total deaths
+    if (data[i].All.deaths !== undefined && data[i].All.continent !== undefined) {
+      if (!dataObject[data[i].All.continent].hasOwnProperty('totalDeaths')) {
+        dataObject[data[i].All.continent]['totalDeaths'] = data[i].All.deaths
+      } else {
+        dataObject[data[i].All.continent]['totalDeaths'] += data[i].All.deaths
+      }
+    }
 
     // counting for total recovered
 
