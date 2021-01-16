@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ContinentCardLoader from './ContinentCardLoader'
 
 import styles from './ContinentsData.module.css'
 import Color from './Color.module.css'
@@ -23,9 +22,6 @@ class ContinentData extends Component {
               dataExists = 'yes'
             }
         })
-
-        // if data exists, add the particular data
-        // if no create new data.
 
         if (dataExists === 'no') {
           dataObject.push({
@@ -53,7 +49,6 @@ class ContinentData extends Component {
 
     }
     
-    // console.log('data object', dataObject)
     return dataObject
   }
 
@@ -82,7 +77,7 @@ class ContinentData extends Component {
 
           {
             dataRender.map((continent, index) => (
-              <div key={index} className={styles.continent_card}> {/* card start from here */}
+              <div key={index} className={styles.continent_card}>
                 <h3 className={styles.continent_card_header}>{continent.continentName}</h3>
                 <div>
                   <p className={styles.total_country_header}>Total Country</p>
