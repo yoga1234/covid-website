@@ -31,8 +31,7 @@ class ContinentData extends Component {
             "totalRecovered": data[i].All.recovered,
             "totalCountries": 1
           })
-        } 
-        if (dataExists === 'yes') {
+        } else {
           dataObject.forEach(continent => {
             if (continent.continentName === data[i].All.continent) {
               continent.totalConfirmed += data[i].All.confirmed
@@ -44,9 +43,7 @@ class ContinentData extends Component {
 
           dataExists = 'no'
         }
-
       }
-
     }
     
     return dataObject
