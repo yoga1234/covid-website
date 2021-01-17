@@ -21,11 +21,13 @@ class MostAffected extends Component {
             "population": data[i].All.population
           })
         } else {
+          // sort based on confirmed
           for (let j = 0; j < countryData.length; j++) {
             if (
               countryData[j].confirmed > data[i].All.confirmed &&
               countryData.length < maxCountry
             ) {
+              console.log('1 ' + countryData[j].confirmed + ' > ' + data[i].All.confirmed)
               countryData.push({
                 "countryName": data[i].All.country,
                 "continentName": data[i].All.continent,
@@ -39,6 +41,7 @@ class MostAffected extends Component {
               countryData[j].confirmed < data[i].All.confirmed &&
               countryData.length < maxCountry
             ) {
+              console.log('2 ' + countryData[j].confirmed + ' < ' + data[i].All.confirmed)
               countryData.splice(j, 1, {
                 "countryName": data[i].All.country,
                 "continentName": data[i].All.continent,
@@ -52,14 +55,15 @@ class MostAffected extends Component {
               countryData[j].confirmed < data[i].All.confirmed &&
               countryData.length > maxCountry
             ) {
-                countryData.splice(j, 1, {
-                  "countryName": data[i].All.country,
-                  "continentName": data[i].All.continent,
-                  "confirmed": data[i].All.confirmed,
-                  "recovered": data[i].All.recovered,
-                  "deaths": data[i].All.deaths,
-                  "population": data[i].All.population
-                })
+              console.log('3 ' + countryData[j].confirmed + ' < ' + data[i].All.confirmed)
+              countryData.splice(j, 1, {
+                "countryName": data[i].All.country,
+                "continentName": data[i].All.continent,
+                "confirmed": data[i].All.confirmed,
+                "recovered": data[i].All.recovered,
+                "deaths": data[i].All.deaths,
+                "population": data[i].All.population
+              })
             countryData.pop()
             break
             }
