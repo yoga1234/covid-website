@@ -26,3 +26,9 @@
   color: #E34A6F;
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  .hero_header {
+    font-size: 28px;
+  }
+}

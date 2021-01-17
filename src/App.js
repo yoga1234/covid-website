@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <HeroText />
       <ContinentsData data={CovidData}/>
-      <MostAffected />
+      <MostAffected data={CovidData}/>
       <Footer />
     </div>
   );
